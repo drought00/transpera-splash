@@ -17,7 +17,8 @@ class HomeController extends BaseController {
 
     public function homepage()
     {
-        return $this->theme->of('transperaSplash')->layout('default')->render();
+        $theme = Theme::uses('pogi');
+        return $theme->of('transperaSplash')->layout('default')->render();
     }
 
 
