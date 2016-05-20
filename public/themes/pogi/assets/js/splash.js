@@ -23,10 +23,11 @@ function getTimeRemaining(endtime){
 function initializeClock(id, endtime){
     var timeinterval = setInterval(function(){
         var t = getTimeRemaining(endtime);
-        $('#days').html(t.days);
-        $('#hour').html(t.hours);
-        $('#mins').html(t.minutes);
-        $('#secs').html(t.seconds);
+
+        $('#days').html(t.days < 10 ? '0'+t.days : t.days);
+        $('#hour').html(t.hours < 10 ? '0'+t.hours : t.hours);
+        $('#mins').html(t.minutes < 10 ? '0'+t.minutes : t.minutes);
+        $('#secs').html(t.seconds < 10 ? '0'+t.seconds : t.seconds);
         if(t.total<=0){
             clearInterval(timeinterval);
         }
