@@ -15,9 +15,10 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
-	{
-		return View::make('hello');
-	}
+    public function homepage()
+    {
+        return $this->theme->of('transperaSplash')->layout('default')->render();
+    }
+
 
 }
