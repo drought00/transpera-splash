@@ -9,7 +9,6 @@
         {{ Theme::asset()->scripts() }}
     </head>
     <body>
-        {{ Theme::partial('header') }}
 
         <div class="container">
             {{ Theme::content() }}

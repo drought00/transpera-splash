@@ -1,3 +1,104 @@
+/*********
+FONT FACE
+**********/
+@font-face {
+    font-family: AvenirNextUltraLight;
+    src: url('../font/avenirnext-ultralight.eot');
+    src: url('../font/avenirnext-ultralight.eot?#iefix') format('embedded-opentype'),
+    url('../font/avenirnext-ultralight.woff') format('woff'),
+    url('../font/avenirnext-ultralight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AvenirLTBook;
+    src: url('../font/avenirLTBook.eot');
+    src: url('../font/avenirLTBook.eot?#iefix') format('embedded-opentype'),
+    url('../font/avenirLTBook.woff') format('woff'),
+    url('../font/avenirLTBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AvenirLTBookOblique;
+    src: url('../font/avenirLTBookOblique.eot');
+    src: url('../font/avenirLTBookOblique.eot?#iefix') format('embedded-opentype'),
+    url('../font/avenirLTBookOblique.woff') format('woff'),
+    url('../font/avenirLTBookOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /***********
 GENERAL CSS
 ************/
+html {
+    background: url('../img/transperaBG.png') no-repeat scroll center center / 100% 100%;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+body, div.container {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+div.splashBody {
+    display: table;
+    height: calc(100% - 150px);
+    width: 100%;
+}
+
+footer.splashFooter {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    display: table;
+    height: 150px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+div.splashWrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a.socialLinks {
+    display: inline-block;
+    text-decoration: none;
+    width: 30%;
+}
+
+p.footerPar {
+    color: #ffffff;
+    font-family: AvenirLTBook;
+    font-size: 20px;
+}
+
+div.footerContents {
+    margin: 0 auto;
+    width: 17%;
+}
+
+div.footerContents > p {
+    margin: 25px 0;
+}
+
+div.splashLeft,
+div.splashRight {
+    float: left;
+    width: 50%;
+}
+
+div.splashContent {
+    padding-top: 20px;
+}
