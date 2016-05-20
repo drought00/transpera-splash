@@ -160,3 +160,30 @@ h3.comingSoon {
     font-weight: normal;
     margin: 0;
 }
+
+/*************
+MEDIA QUERIES
+**************/
+@media screen and (max-width: 768px){
+    div.splashRight {
+        display: none;
+    }
+
+    footer.splashFooter {
+        display: block;
+    }
+
+    div.countDownCont,
+    div.comingSoonCont {
+        padding-top: 10%;
+    }
+
+    div.splashLeft {
+        float: none;
+        width: 100%;
+    }
+
+    div.footerContents {
+        width: 100%;
+    }
+}
