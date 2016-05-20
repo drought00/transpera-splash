@@ -5,31 +5,38 @@
     <div class="splashWrapper">
         <div class="splashContent">
             <div class="splashLeft">
-                <div class="logoContainer">
-                    <img class="splashImage" src="{{URL::to('/')}}/themes/pogi/assets/img/transperaLogo.png"/>
-                </div>
-                <div class="countDownCont">
-                    <div class="countDownBlock">
-                        <span class="countdownElms daysCount"></span>
-                        <span class="countdownElms daysCount">Days</span>
+                <div class="countDownWrapper">
+                    <div class="logoContainer">
+                        <img class="splashImage" src="{{URL::to('/')}}/themes/pogi/assets/img/transperaLogo.png"/>
                     </div>
-                    <div class="countDownBlock">
-                        <span class="countdownElms hoursCount"></span>
-                        <span class="countdownElms hoursCount">Hours</span>
+                    <div class="countDownCont">
+                        <div class="countDownBlock">
+                            <span id="days" class="countdownElms daysCount"></span>
+                            <span class="countDownLabels">Days</span>
+                        </div>
+                        <div class="countDownBlock">
+                            <span id="hour" class="countdownElms hoursCount"></span>
+                            <span class="countDownLabels">Hours</span>
+                        </div>
+                        <div class="countDownBlock">
+                            <span id="mins" class="countdownElms minutesCount"></span>
+                            <span class="countDownLabels">Minutes</span>
+                        </div>
+                        <div class="countDownBlock">
+                            <span id="secs" class="countdownElms secCount"></span>
+                            <span class="countDownLabels">Seconds</span>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="countDownBlock">
-                        <span class="countdownElms minutesCount"></span>
-                        <span class="countdownElms minutesCount">Minutes</span>
+                    <div class="comingSoonCont">
+                        <h3 class="comingSoon">Coming Soon...</h3>
                     </div>
-                    <div class="countDownBlock">
-                        <span class="countdownElms secCount"></span>
-                        <span class="countdownElms secCount">Seconds</span>
-                    </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             <div class="splashRight">
-                <img class="splashImage" src="{{URL::to('/')}}/themes/pogi/assets/img/splashImage.png"/>
+                <div class="splashRightWrapper">
+                    <img class="splashImage" src="{{URL::to('/')}}/themes/pogi/assets/img/splashImage.png"/>
+                </div>
             </div>
             <div class="clear"></div>
         </div>

@@ -51,9 +51,8 @@ body, div.container {
 }
 
 div.splashBody {
-    display: table;
-    height: calc(100% - 150px);
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
 }
 
 footer.splashFooter {
@@ -63,10 +62,22 @@ footer.splashFooter {
     height: 150px;
     left: 0;
     position: fixed;
+    text-align: center;
     width: 100%;
 }
 
-div.splashWrapper {
+div.splashLeft,
+div.splashRight {
+    display: table;
+    height: calc(100vh - 150px);
+}
+
+div.splashRight {
+    padding-top: 20px;
+}
+
+div.countDownWrapper,
+div.splashRightWrapper {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -99,6 +110,53 @@ div.splashRight {
     width: 50%;
 }
 
-div.splashContent {
-    padding-top: 20px;
+div.countDownBlock {
+    float: left;
+    position: relative;
+    width: 25%;
+}
+
+div.countDownCont {
+    padding-top: 100px;
+}
+
+
+span.countdownElms {
+    color: #ffffff;
+    display: block;
+}
+
+span.countdownElms {
+    color: #ffffff;
+    display: block;
+    font-family: AvenirNextUltraLight;
+    font-size: 63px;
+}
+
+span.countdownElms::after {
+    content: ":";
+    position: absolute;
+    right: 0;
+}
+
+span.secCount::after {
+    display: none;
+}
+
+span.countDownLabels {
+    color: #ffffff;
+    font-family: AvenirNextUltraLight;
+    font-size: 18px;
+}
+
+div.comingSoonCont {
+    padding-top: 100px;
+}
+
+h3.comingSoon {
+    color: #ffffff;
+    font-family: AvenirLTBookOblique;
+    font-size: 39px;
+    font-weight: normal;
+    margin: 0;
 }
