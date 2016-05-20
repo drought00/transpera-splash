@@ -57,6 +57,7 @@ return array(
         // breadcrumb template.
         'beforeRenderTheme' => function($theme)
         {
+            $theme->asset()->usePath()->add('js-jquery', 'js/jquery-1.11.1.min.js');
             // You may use this event to set up your assets.
             // $theme->asset()->usePath()->add('core', 'core.js');
             // $theme->asset()->add('jquery', 'vendor/jquery/jquery.min.js');
