@@ -17,7 +17,9 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+        $date = strtotime("December 3, 2009 2:00 PM");
+        $remaining = $date - time();
+		return Theme::of('hello',array('data'=>$date));
 	}
 
 }
