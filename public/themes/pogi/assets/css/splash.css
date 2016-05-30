@@ -165,6 +165,11 @@ h3.comingSoon {
 MEDIA QUERIES
 **************/
 @media screen and (max-device-width: 1150px){
+    html {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     div.splashRight {
         display: none;
     }
