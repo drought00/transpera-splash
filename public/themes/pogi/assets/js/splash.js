@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var deadline = '2016-05-30';
+    var deadline = '2016-06-03';
 
     initializeClock('clockdiv', deadline);
 
